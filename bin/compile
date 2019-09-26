@@ -15,14 +15,14 @@ cd $build_dir
 
 # Check and run web pack
 (
-    if [ -f $build_dir/webpack.config.js]; then
+    if [ -f $build_dir/webpack.config.js ]; then
         if [ -d "$env_dir" ]; then
         status "Exporting config vars to environment"
         export_env_dir $env_dir
         fi
 
-            status "Found webpack config, running webpack"
-            $build_dir/node_modules/.bin/gulp --production
+            status "Found webpack, running webpack"
+            $build_dir/node_modules/.bin/webpack --production
         else
             status "No webpack config found"
     fi
