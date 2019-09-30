@@ -23,6 +23,7 @@ cd $build_dir
 
         echo "Found webpack, running webpack"
         $build_dir/node_modules/.bin/webpack --production
+        $build_dir/node_modules/.bin/build-storybook -c ./app/assets/javascripts/horse/react-ui/.storybook -o ./public/assets/build/design-system -s ./public/assets/build/design-system
         else
             echo "No webpack config found"
     fi
