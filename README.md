@@ -16,7 +16,6 @@ The `bin/compile` script run webpack with the default configuration file (`webpa
 
    ```
    https://github.com/heroku/heroku-buildpack-nodejs
-   https://github.com/jerrysu/heroku-buildpack-webpack
    ```
 
 3. Deploy to Heroku.
